@@ -1,0 +1,75 @@
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  padding: 8rem 0 7rem;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+.terminal {
+    font-family: Inconsolata,Consolas,Menlo,Monaco,"Courier New",monospace;
+    color: #ccc;
+    background: #234a61;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.terminal--head {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ECECEC), color-stop(1, #D3D3D3));
+    background-image: -o-linear-gradient(bottom, #ECECEC 0%, #D3D3D3 100%);
+    background-image: -moz-linear-gradient(bottom, #ECECEC 0%, #D3D3D3 100%);
+    background-image: -webkit-linear-gradient(bottom, #ECECEC 0%, #D3D3D3 100%);
+    background-image: -ms-linear-gradient(bottom, #ECECEC 0%, #D3D3D3 100%);
+    background-image: linear-gradient(to bottom, #ECECEC 0%, #D3D3D3 100%);
+    height: 23px;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+}
+
+.terminal--buttons {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #FC615C;
+    left: 10px;
+    top: 5px;
+    border: 1px solid #DF4744;
+}
+
+.terminal--buttons:after, .terminal--buttons:before  {
+    display: block;
+    position: absolute;
+    content: "";
+    left: 18px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #FDBF41;
+    border: 1px solid #DE9F34;
+    top: -1px;
+}
+
+.terminal--buttons:after {
+    background: #33C748;
+    left: 38px;
+    border: 1px solid #27AA35;
+}
+
+.terminal--content {
+    padding: 10px 20px;
+    overflow: scroll;
+}
+
+.terminal--content a {
+    color: #fff;
+}
+
+pre {
+    padding: 0px;
+}

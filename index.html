@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Implementable</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+  <script type="text/javascript">
+    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var n=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(n?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(a,o);for(var r=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["clearEventProperties","identify","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=r(p[c])};
+    heap.load("1564872258");
+  </script>
+
+</head>
+<body>
+
+  <div class="section hero" style="background-color: #fcfcfc">
+    <div class="container">
+      <div class="row">
+        <div class="two columns">&nbsp;</div>
+        <div class="one column" style="min-width: 100px; min-height: 100px">
+          <div style="height: 100px; width: 100px">
+            <div style="width: 100%; height: 100%; background-color: #6e95ff">
+              <div style="width: 20%; height: 40%; background-color: #b7caff; left: 40%; top: 40%; position: relative">
+              </div>
+              <div style="width: 20%; height: 20%; background-color: white; left: 40%; bottom: 20%; position: relative">
+                <div style="width: 50%; height: 50%; background-color: #b7caff; left: 25%; top: 25%; position: relative"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="three columns" style="margin-bottom: 1rem">
+          <h1>Implementable</h1>
+          <p>Focusing on the essential</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="two columns">&nbsp;</div>
+        <div class="eight columns">
+            <p class="section-description">Implementable is an open source and enterprise technology provider. We also offer high-end software development consultancy services for select clients.
+            </p>
+            <p class="section-description">Our own technology stack allows us to quickly deliver initial prototypes and rapidly evolve them into production systems and beyond.</p>
+            <p style="color: gray;">
+              <small><strong>Implementable</strong> is based out of Vancouver, Canada.</small>
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <h1>Eventchain</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="one-half column">
+          <p>Eventchain is an <strong>event sourcing/CQRS</strong> framework for Java that we have built in-house.
+          </p>
+          <p>
+            Instead of mutating data in a database, it stores all changes (events) and causes (commands).
+            This facilitates rapid application development and evolution by mitigating the inability to predict how
+            future needs will drive the data shape requirements as all the causal information is persisted.
+            It also provides a foundation for deep analytics, data recovery, audit trails and other associated benefits.
+          </p>
+          <p>
+          <ul>
+          <li>Compact data storage layout</li>
+          <li>Using CQengine for fast indexing and querying</li>
+          <li>In-memory and on-disk <i>(coming soon)</i> storage</li>
+          <li>Causality-preserving Hybrid Logical Clocks</li>
+          <li>Locking synchronization primitive</li>
+          </ul>
+          </p>
+        </div>
+        <div class="one-half column">
+          <p>
+            <div class="terminal">
+              <div class="terminal--head">
+                <div class="terminal--buttons"></div>
+              </div>
+              <div class="terminal--content java">
+                  <pre>
+public Login extends Command&lt;User&gt; {
+  private String login;
+  private String password;
+
+  private Stream&lt;Event&gt;
+          events(Repository repository) {
+    return Stream.of(new UserLoggedIn());
+  }
+}
+                  </pre>
+              </div>
+              <div style="text-align: center">
+                <a class="button button-primary" href="https://github.com/eventchain/eventchain">Learn more about Eventchain</a>
+              </div>
+            </div>
+          </p>
+        </div>
+    <div class="row">
+      <div class="twelve columns">
+        <h1>Reactuate</h1>
+        <p>Reactuate is an opinionated stack for building React/Redux-based frontend applications with a focus on DDD (Domain-Driven Design). The rationale behind this project is to ensure there's a "standard stack" with compatible versions of various libraries stitched together in a cohesive way. This comes at a cost of reduced ability to swap out certain components but ultimately helps shipping software fast.
+        </p>
+        <p>
+          <ol>
+            <li>Fork-and-forget (or fork-and-follow) is not a great way to keep up with what's happening in the original boilerplate (and in the space in general). Therefore, starting off a cloned boilerplate "kit" is not an acceptable solution. Reactuate is distributed as a dependency.</li>
+            <li>Reactuate is strictly a frontend-oriented stack and is not meant to provide a foundation for so called "universal" (server and client side) JavaScript applications.</li>
+            <li>Reducing the amount of noise. Many kits suffer from the need to create too many files for each "functional vertical" (such as action creators, constants, reducer), which in turn leads to increased maintenance complexity (try renaming one of the verticals!), import nightmare and inability to have a compact overview of the functionality.</li>
+            <li>Discovering and learning the capabilities of a comprehensive stack could be complicated. What's worse, maintaining such stacks can be equally painful. Therefore, unconventionally, Reactuate is written as a literate program and is meant to be read as an article and be a concise reference manual — while being a functional library. The effects of this literate program are also included in Reactuate's repository to improve its accessibility. Certain parts of code that do not contribute to the reader's clarity are commented out and therefore omitted from the rendered documentation. They are, however, used for source code production.</li>
+          </ol>
+        </p>
+        <div style="text-align: center">
+          <a class="button button-primary" href="https://github.com/reactuate/reactuate">Learn more about Reactuate</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="u-pull-right">
+        <a href="https://www.codementor.io"><img width="108" src="//cdn.codementor.io/badges/codementor_light@2x.png" alt="Codementor" /></a>
+        <a href="https://heapanalytics.com/?utm_source=badge"><img style="width:108px;height:41px" src="//heapanalytics.com/img/badgeLight.png" alt="Heap | Mobile and Web Analytics" /></a>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68137992-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
